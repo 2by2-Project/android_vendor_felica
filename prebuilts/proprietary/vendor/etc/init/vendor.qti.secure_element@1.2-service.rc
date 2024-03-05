@@ -1,0 +1,8 @@
+on boot && property:ro.vendor.hw.nfc=ese_nq
+    start secureelement-hal_1_2
+
+service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
+    class hal
+    user system
+    group system
+    disabled
